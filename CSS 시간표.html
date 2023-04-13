@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+        <style>
+        table {
+            border-collapse: collapse;
+            border-radius: 10px;
+        }
+
+        .bgwhite {
+            background-color: white;
+            text-align: center;
+        }
+
+        .sleep {
+            background-color: #424242;
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .wakeup {
+            background-color: #fafafa;
+            border-style: none;
+        }
+
+        .lecture {
+            border-style: none;
+            border-radius: 20px;
+        }
+
+        .lunch {
+            background-color: #fcf9dd;
+            border-style: none;
+            border-radius: 20px;
+        }
+
+        .dinner {
+            background-color: #ece0f8;
+            border-style: none;
+            border-radius: 20px;
+        }
+
+        .parttime {
+            background-color: #e0f8f7;
+            border-style: none;
+            border-radius: 20px;
+        }
+    </style>
+       
+</head>
+
+<body>
+        <table border="1" width=800 height="1000">
+                <thead>
+            <caption>
+                <h3>시간표</h3>
+            </caption>
+        </thead>
+               <tbody>
+                       
+            <col span="6" bgcolor="white" width="100" />
+                       <tr>
+                               <th class="bgwhite"></th>
+                               <th>월</th>
+                               <th>화</th>
+                               <th>수</th>
+                               <th>목</th>
+                               <th>금</th>
+                           </tr>
+                       
+                       <tr class="bgwhite">
+                               <td>08:00 ~ 09:00</td>
+                               <td class="sleep">취침</td>
+                               <td class="wakeup">기상 및 등교준비</td>
+                               <td class="wakeup">기상 및 등교준비</td>
+                               <td class="sleep" rowspan="2">취침</td>
+                               <td class="wakeup">기상 및 등교준비</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>09:00 ~ 10:00</td>
+                               <td class="wakeup">기상 및 등교준비</td>
+                               <td class="lecture" bgcolor="#BEF781" rowspan="2">정보보호론</td>
+                               <td class="lecture" bgcolor="#81F7BE" rowspan="2">데이터베이스 이론 및 실습</td>
+                               <td class="lecture" bgcolor="#F7BE81" rowspan="2">소프트웨어<br>설계공학</td>
+                           </tr>
+                       
+                       <tr class="bgwhite">
+                               <td>10:00 ~ 11:00</td>
+                               <td class="lecture" bgcolor="#F79F81" rowspan="2">클라우드<br>시스템</td>
+                               <td class="wakeup">기상 및 등교준비</td>
+                           </tr>
+                       
+                        <tr class="bgwhite">
+                               <td>11:00 ~ 12:00</td>
+                               <td class="lunch" rowspan="2">점심</td>
+                               <td class="lecture" bgcolor="#F7BE81" rowspan="2"
+                    style="border: none; border-radius: 20px;">소프트웨어<br>설계공학</td>
+                               <td class="lecture" bgcolor="#F79F81" rowspan="2"
+                    style="border: none; border-radius: 20px;">클라우드<br>시스템</td>
+                               <td class="lunch" rowspan="2">점심</td>
+                           </tr>
+                       
+                       <tr class="bgwhite">
+                               <td>12:00 ~ 13:00</td>
+                               <td class="lecture" bgcolor="#F7D358">운영체제</td>
+                           </tr>
+                       
+                       <tr class="bgwhite">
+                               <td>13:00 ~ 14:00</td>
+                               <td class="lecture" bgcolor="#BEF781">정보보호론</td>
+                               <td class="lecture" bgcolor="#81F7BE" rowspan="2">데이터베이스 이론 및 실습</td>
+                               <td class="lunch">점심</td>
+                               <td class="lunch">점심</td>
+                               <td class="lecture" bgcolor="#BE81F7" rowspan="3">멀티미디어 시스템</td>
+                           </tr>
+                       
+                       <tr class="bgwhite">
+                               <td>14:00 ~ 15:00</td>
+                               <td class="lunch">점심</td>
+                               <td class="wakeup" rowspan="4">휴식 및 공부</td>
+                               <td class="lecture" bgcolor="#F7D358">운영체제</td>
+                           </tr>
+                       
+                       <tr class="bgwhite">
+                               <td>15:00 ~ 16:00</td>
+                               <td class="wakeup" rowspan="5">휴식 및 공부</td>
+                               <td class="wakeup">휴식</td>
+                               <td class="wakeup" rowspan="3">휴식 및 공부</td>
+                           </tr>
+                       
+                       <tr class="bgwhite">
+                               <td>16:00 ~ 17:00</td>
+                               <td class="lecture" bgcolor="#A9BCF5">지도세</td>
+                               <td class="wakeup" rowspan="2">휴식 및 공부</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>17:00 ~ 18:00</td>
+                               <td class="wakeup" rowspan="2">휴식 및 공부</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>18:00 ~ 19:00</td>
+                               <td class="dinner">저녁</td>
+                               <td class="dinner">저녁</td>
+                               <td class="dinner">저녁</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>19:00 ~ 20:00</td>
+                               <td class="dinner">저녁</td>
+                               <td class="wakeup">휴식</td>
+                               <td class="wakeup">휴식</td>
+                               <td class="wakeup">휴식</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>20:00 ~ 21:00</td>
+                               <td class="dinner">저녁</td>
+                               <td class="wakeup" rowspan="5">휴식</td>
+                               <td class="parttime" rowspan="3">알바</td>
+                               <td class="parttime" rowspan="3">알바</td>
+                               <td class="parttime" rowspan="3">알바</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>21:00 ~ 22:00</td>
+                               <td class="wakeup" rowspan="4">휴식</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>22:00 ~ 23:00</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>23:00 ~ 24:00</td>
+                               <td class="wakeup" rowspan="2">휴식</td>
+                               <td class="wakeup" rowspan="2">휴식</td>
+                               <td class="wakeup" rowspan="2">휴식</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>24:00 ~ 01:00</td>
+                           </tr>
+                       <tr class="bgwhite">
+                               <td>01:00 ~ 08:00</td>
+                               <td class="sleep">취침</td>
+                               <td class="sleep">취침</td>
+                               <td class="sleep">취침</td>
+                               <td class="sleep">취침</td>
+                               <td class="sleep">취침</td>
+                           </tr>
+                   
+        </tbody>
+               <tfoot></tfoot>
+           </table>
+</body>
+
+</html>
